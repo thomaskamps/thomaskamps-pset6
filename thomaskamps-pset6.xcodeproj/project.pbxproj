@@ -12,6 +12,7 @@
 		CE1D68381DFAE863004B40CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68361DFAE863004B40CE /* Main.storyboard */; };
 		CE1D683A1DFAE863004B40CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68391DFAE863004B40CE /* Assets.xcassets */; };
 		CE1D683D1DFAE863004B40CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */; };
+		CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68441DFB55B1004B40CE /* APIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE1D68391DFAE863004B40CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1D683C1DFAE863004B40CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1D683E1DFAE863004B40CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1D68441DFB55B1004B40CE /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1D68321DFAE863004B40CE /* AppDelegate.swift */,
+				CE1D68441DFB55B1004B40CE /* APIHelper.swift */,
 				CE1D68341DFAE863004B40CE /* ViewController.swift */,
 				CE1D68361DFAE863004B40CE /* Main.storyboard */,
 				CE1D68391DFAE863004B40CE /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */,
 				CE1D68351DFAE863004B40CE /* ViewController.swift in Sources */,
 				CE1D68331DFAE863004B40CE /* AppDelegate.swift in Sources */,
 			);
