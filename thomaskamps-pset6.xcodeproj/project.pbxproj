@@ -14,6 +14,15 @@
 		CE1D683D1DFAE863004B40CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */; };
 		CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68441DFB55B1004B40CE /* APIHelper.swift */; };
 		CE1D68471DFEB718004B40CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */; };
+		CE1D68491DFEC187004B40CE /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68481DFEC187004B40CE /* ImageItem.swift */; };
+		CE1D684B1DFEC4B4004B40CE /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */; };
+		CE1D684D1DFEC61E004B40CE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */; };
+		CE1D684F1DFEC62A004B40CE /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */; };
+		CE1D68511DFEC637004B40CE /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68501DFEC637004B40CE /* CategoriesViewController.swift */; };
+		CE1D68531DFECFBD004B40CE /* FireBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */; };
+		CE1D68561DFEEE53004B40CE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */; };
+		CE1D68581DFF05D0004B40CE /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */; };
+		CE1D685A1DFF0910004B40CE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68591DFF0910004B40CE /* PictureViewController.swift */; };
 		D06AB39C793B72805D5830E5 /* Pods_thomaskamps_pset6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +38,16 @@
 		CE1D683E1DFAE863004B40CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1D68441DFB55B1004B40CE /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE1D68481DFEC187004B40CE /* ImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		CE1D68501DFEC637004B40CE /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseHelper.swift; sourceTree = "<group>"; };
+		CE1D68541DFED3CA004B40CE /* thomaskamps-pset6.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "thomaskamps-pset6.entitlements"; sourceTree = "<group>"; };
+		CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		CE1D68591DFF0910004B40CE /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thomaskamps_pset6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,16 +92,34 @@
 		CE1D68311DFAE863004B40CE /* thomaskamps-pset6 */ = {
 			isa = PBXGroup;
 			children = (
+				CE1D685B1DFF11BD004B40CE /* ViewControllers */,
+				CE1D68541DFED3CA004B40CE /* thomaskamps-pset6.entitlements */,
 				CE1D68321DFAE863004B40CE /* AppDelegate.swift */,
 				CE1D68441DFB55B1004B40CE /* APIHelper.swift */,
-				CE1D68341DFAE863004B40CE /* LoginViewController.swift */,
+				CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */,
+				CE1D68481DFEC187004B40CE /* ImageItem.swift */,
 				CE1D68361DFAE863004B40CE /* Main.storyboard */,
+				CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */,
+				CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */,
 				CE1D68391DFAE863004B40CE /* Assets.xcassets */,
 				CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */,
 				CE1D683E1DFAE863004B40CE /* Info.plist */,
 				CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */,
 			);
 			path = "thomaskamps-pset6";
+			sourceTree = "<group>";
+		};
+		CE1D685B1DFF11BD004B40CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */,
+				CE1D68341DFAE863004B40CE /* LoginViewController.swift */,
+				CE1D68591DFF0910004B40CE /* PictureViewController.swift */,
+				CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */,
+				CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */,
+				CE1D68501DFEC637004B40CE /* CategoriesViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		E0F82E4C4C9715404AA8D11A /* Pods */ = {
@@ -131,6 +168,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 4W94L64SGM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -219,9 +261,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D684D1DFEC61E004B40CE /* SearchViewController.swift in Sources */,
+				CE1D685A1DFF0910004B40CE /* PictureViewController.swift in Sources */,
+				CE1D684F1DFEC62A004B40CE /* ContactsViewController.swift in Sources */,
+				CE1D68491DFEC187004B40CE /* ImageItem.swift in Sources */,
 				CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */,
+				CE1D68531DFECFBD004B40CE /* FireBaseHelper.swift in Sources */,
+				CE1D68581DFF05D0004B40CE /* RemoteImageView.swift in Sources */,
 				CE1D68351DFAE863004B40CE /* LoginViewController.swift in Sources */,
+				CE1D684B1DFEC4B4004B40CE /* FavoritesViewController.swift in Sources */,
+				CE1D68511DFEC637004B40CE /* CategoriesViewController.swift in Sources */,
 				CE1D68331DFAE863004B40CE /* AppDelegate.swift in Sources */,
+				CE1D68561DFEEE53004B40CE /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +396,7 @@
 			baseConfigurationReference = 172E1D5AACFB0BBE081B5610 /* Pods-thomaskamps-pset6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "thomaskamps-pset6/thomaskamps-pset6.entitlements";
 				DEVELOPMENT_TEAM = 4W94L64SGM;
 				INFOPLIST_FILE = "thomaskamps-pset6/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -359,6 +411,7 @@
 			baseConfigurationReference = 807ABF4F448B1AFEDCE9E840 /* Pods-thomaskamps-pset6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "thomaskamps-pset6/thomaskamps-pset6.entitlements";
 				DEVELOPMENT_TEAM = 4W94L64SGM;
 				INFOPLIST_FILE = "thomaskamps-pset6/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,6 +440,7 @@
 				CE1D68431DFAE863004B40CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

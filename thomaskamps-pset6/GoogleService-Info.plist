@@ -34,5 +34,7 @@
 	<string>1:244761997578:ios:af520c624e1de268</string>
 	<key>DATABASE_URL</key>
 	<string>https://thomaskamps-pset6.firebaseio.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB2bqHMsIHSWGv7DTDIpQWYUlOPcU2VHuc</string>
 </dict>
 </plist>

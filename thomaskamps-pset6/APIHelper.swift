@@ -7,9 +7,22 @@
 //
 
 import Foundation
-/*
+import Siesta
+import SwiftyJSON
+
 class APIHelper {
     
+    static let sharedInstance = APIHelper()
+    
+    let pixabayAPI = Service(baseURL: "https://pixabay.com/api")
+    let key = "3987140-123363b3a4777b57ef5875d82"
+    
+    private init() { }
+    
+    
+    
+
+    /*
     func getJSON(givenID: String){
         let reqURL = URL(string: "https://www.omdbapi.com/?plot=full&r=json&i="+givenID)
         URLSession.shared.dataTask(with: reqURL! as URL, completionHandler: { data, response, error in
@@ -24,7 +37,7 @@ class APIHelper {
                 DispatchQueue.main.async {
                     self.movieData[givenID] = [:] as Dictionary <String, String>
                     self.movieData[givenID]?["title"] = parsedDataDict["Title"] as! String?
-                    self.movieData[givenID]?["year"] = parsedDataDict["Year"] as! String?
+                    self.movieData[givenID]?["year"] = parsedDataDict["Year"] String?
                     self.movieData[givenID]?["posterUrl"] = parsedDataDict["Poster"] as! String?
                     self.tableView.reloadData()
                     self.getIMG(givenID: givenID)
@@ -53,6 +66,6 @@ class APIHelper {
             
         }).resume()
     }
+    */
     
 }
- */
