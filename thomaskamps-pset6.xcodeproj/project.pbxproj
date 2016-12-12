@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CE1D68331DFAE863004B40CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68321DFAE863004B40CE /* AppDelegate.swift */; };
-		CE1D68351DFAE863004B40CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68341DFAE863004B40CE /* ViewController.swift */; };
+		CE1D68351DFAE863004B40CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68341DFAE863004B40CE /* LoginViewController.swift */; };
 		CE1D68381DFAE863004B40CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68361DFAE863004B40CE /* Main.storyboard */; };
 		CE1D683A1DFAE863004B40CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68391DFAE863004B40CE /* Assets.xcassets */; };
 		CE1D683D1DFAE863004B40CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */; };
 		CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68441DFB55B1004B40CE /* APIHelper.swift */; };
+		CE1D68471DFEB718004B40CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */; };
+		D06AB39C793B72805D5830E5 /* Pods_thomaskamps_pset6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172E1D5AACFB0BBE081B5610 /* Pods-thomaskamps-pset6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thomaskamps-pset6.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thomaskamps-pset6/Pods-thomaskamps-pset6.debug.xcconfig"; sourceTree = "<group>"; };
+		807ABF4F448B1AFEDCE9E840 /* Pods-thomaskamps-pset6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thomaskamps-pset6.release.xcconfig"; path = "Pods/Target Support Files/Pods-thomaskamps-pset6/Pods-thomaskamps-pset6.release.xcconfig"; sourceTree = "<group>"; };
 		CE1D682F1DFAE863004B40CE /* thomaskamps-pset6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thomaskamps-pset6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1D68321DFAE863004B40CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE1D68341DFAE863004B40CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE1D68341DFAE863004B40CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE1D68371DFAE863004B40CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE1D68391DFAE863004B40CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1D683C1DFAE863004B40CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1D683E1DFAE863004B40CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1D68441DFB55B1004B40CE /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thomaskamps_pset6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06AB39C793B72805D5830E5 /* Pods_thomaskamps_pset6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		335AEA7AC4D9A1384784C737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE1D68261DFAE862004B40CE = {
 			isa = PBXGroup;
 			children = (
 				CE1D68311DFAE863004B40CE /* thomaskamps-pset6 */,
 				CE1D68301DFAE863004B40CE /* Products */,
+				E0F82E4C4C9715404AA8D11A /* Pods */,
+				335AEA7AC4D9A1384784C737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +75,23 @@
 			children = (
 				CE1D68321DFAE863004B40CE /* AppDelegate.swift */,
 				CE1D68441DFB55B1004B40CE /* APIHelper.swift */,
-				CE1D68341DFAE863004B40CE /* ViewController.swift */,
+				CE1D68341DFAE863004B40CE /* LoginViewController.swift */,
 				CE1D68361DFAE863004B40CE /* Main.storyboard */,
 				CE1D68391DFAE863004B40CE /* Assets.xcassets */,
 				CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */,
 				CE1D683E1DFAE863004B40CE /* Info.plist */,
+				CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */,
 			);
 			path = "thomaskamps-pset6";
+			sourceTree = "<group>";
+		};
+		E0F82E4C4C9715404AA8D11A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				172E1D5AACFB0BBE081B5610 /* Pods-thomaskamps-pset6.debug.xcconfig */,
+				807ABF4F448B1AFEDCE9E840 /* Pods-thomaskamps-pset6.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE1D68411DFAE863004B40CE /* Build configuration list for PBXNativeTarget "thomaskamps-pset6" */;
 			buildPhases = (
+				187D5E6400F1DD5738502F9A /* [CP] Check Pods Manifest.lock */,
 				CE1D682B1DFAE863004B40CE /* Sources */,
 				CE1D682C1DFAE863004B40CE /* Frameworks */,
 				CE1D682D1DFAE863004B40CE /* Resources */,
+				11BD54E3ADF97E8DB0BBB444 /* [CP] Embed Pods Frameworks */,
+				66E9D892E335886ED4A702B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1D683D1DFAE863004B40CE /* LaunchScreen.storyboard in Resources */,
+				CE1D68471DFEB718004B40CE /* GoogleService-Info.plist in Resources */,
 				CE1D683A1DFAE863004B40CE /* Assets.xcassets in Resources */,
 				CE1D68381DFAE863004B40CE /* Main.storyboard in Resources */,
 			);
@@ -135,13 +166,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11BD54E3ADF97E8DB0BBB444 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thomaskamps-pset6/Pods-thomaskamps-pset6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		187D5E6400F1DD5738502F9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		66E9D892E335886ED4A702B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thomaskamps-pset6/Pods-thomaskamps-pset6-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE1D682B1DFAE863004B40CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */,
-				CE1D68351DFAE863004B40CE /* ViewController.swift in Sources */,
+				CE1D68351DFAE863004B40CE /* LoginViewController.swift in Sources */,
 				CE1D68331DFAE863004B40CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +342,7 @@
 		};
 		CE1D68421DFAE863004B40CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172E1D5AACFB0BBE081B5610 /* Pods-thomaskamps-pset6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W94L64SGM;
@@ -276,6 +356,7 @@
 		};
 		CE1D68431DFAE863004B40CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 807ABF4F448B1AFEDCE9E840 /* Pods-thomaskamps-pset6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W94L64SGM;
