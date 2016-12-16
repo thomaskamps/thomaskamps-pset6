@@ -24,7 +24,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         FIRAuth.auth()!.addStateDidChangeListener { auth, user in
             guard let user = user else { return }
-            //self.user = "ding met user object"
         }
         searchBar.delegate = self
         searchBar.showsCancelButton = true
@@ -36,17 +35,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchData.count
@@ -74,12 +62,14 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if searchBar.text! != "" {
+            view.endEditing(true)
             self.api.resource("/").withParam("orientation", "vertical").withParam("key", self.apiKey).withParam("q", searchBar.text!.replacingOccurrences(of: " ", with: "+")).addObserver(self).loadIfNeeded()
         }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
+        view.endEditing(true)
         searchData = []
         self.tableView.reloadData()
     }

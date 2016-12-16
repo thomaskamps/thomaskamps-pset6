@@ -18,11 +18,15 @@
 		CE1D684B1DFEC4B4004B40CE /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */; };
 		CE1D684D1DFEC61E004B40CE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */; };
 		CE1D684F1DFEC62A004B40CE /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */; };
-		CE1D68511DFEC637004B40CE /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68501DFEC637004B40CE /* CategoriesViewController.swift */; };
 		CE1D68531DFECFBD004B40CE /* FireBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */; };
 		CE1D68561DFEEE53004B40CE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */; };
 		CE1D68581DFF05D0004B40CE /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */; };
 		CE1D685A1DFF0910004B40CE /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68591DFF0910004B40CE /* PictureViewController.swift */; };
+		CE6C000E1E03321000E590D4 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C000D1E03321000E590D4 /* ContactsTableViewCell.swift */; };
+		CE6C00101E0336B800E590D4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C000F1E0336B800E590D4 /* SignUpViewController.swift */; };
+		CE6C00121E03504100E590D4 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C00111E03504100E590D4 /* AlertExtension.swift */; };
+		CE6C00141E03692A00E590D4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C00131E03692A00E590D4 /* SettingsViewController.swift */; };
+		CE7351431DFF3E770071A2BE /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */; };
 		D06AB39C793B72805D5830E5 /* Pods_thomaskamps_pset6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,12 +46,16 @@
 		CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		CE1D68501DFEC637004B40CE /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseHelper.swift; sourceTree = "<group>"; };
 		CE1D68541DFED3CA004B40CE /* thomaskamps-pset6.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "thomaskamps-pset6.entitlements"; sourceTree = "<group>"; };
 		CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		CE1D68591DFF0910004B40CE /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		CE6C000D1E03321000E590D4 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		CE6C000F1E0336B800E590D4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE6C00111E03504100E590D4 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		CE6C00131E03692A00E590D4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thomaskamps_pset6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,7 +107,10 @@
 				CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */,
 				CE1D68481DFEC187004B40CE /* ImageItem.swift */,
 				CE1D68361DFAE863004B40CE /* Main.storyboard */,
+				CE6C000D1E03321000E590D4 /* ContactsTableViewCell.swift */,
+				CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */,
 				CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */,
+				CE6C00111E03504100E590D4 /* AlertExtension.swift */,
 				CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */,
 				CE1D68391DFAE863004B40CE /* Assets.xcassets */,
 				CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */,
@@ -112,12 +123,13 @@
 		CE1D685B1DFF11BD004B40CE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE6C00131E03692A00E590D4 /* SettingsViewController.swift */,
+				CE6C000F1E0336B800E590D4 /* SignUpViewController.swift */,
 				CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */,
 				CE1D68341DFAE863004B40CE /* LoginViewController.swift */,
 				CE1D68591DFF0910004B40CE /* PictureViewController.swift */,
 				CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */,
 				CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */,
-				CE1D68501DFEC637004B40CE /* CategoriesViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -261,16 +273,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6C000E1E03321000E590D4 /* ContactsTableViewCell.swift in Sources */,
 				CE1D684D1DFEC61E004B40CE /* SearchViewController.swift in Sources */,
 				CE1D685A1DFF0910004B40CE /* PictureViewController.swift in Sources */,
 				CE1D684F1DFEC62A004B40CE /* ContactsViewController.swift in Sources */,
+				CE6C00121E03504100E590D4 /* AlertExtension.swift in Sources */,
 				CE1D68491DFEC187004B40CE /* ImageItem.swift in Sources */,
 				CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */,
+				CE6C00141E03692A00E590D4 /* SettingsViewController.swift in Sources */,
 				CE1D68531DFECFBD004B40CE /* FireBaseHelper.swift in Sources */,
 				CE1D68581DFF05D0004B40CE /* RemoteImageView.swift in Sources */,
 				CE1D68351DFAE863004B40CE /* LoginViewController.swift in Sources */,
+				CE6C00101E0336B800E590D4 /* SignUpViewController.swift in Sources */,
 				CE1D684B1DFEC4B4004B40CE /* FavoritesViewController.swift in Sources */,
-				CE1D68511DFEC637004B40CE /* CategoriesViewController.swift in Sources */,
+				CE7351431DFF3E770071A2BE /* FavoritesTableViewCell.swift in Sources */,
 				CE1D68331DFAE863004B40CE /* AppDelegate.swift in Sources */,
 				CE1D68561DFEEE53004B40CE /* SearchTableViewCell.swift in Sources */,
 			);
@@ -399,6 +415,7 @@
 				CODE_SIGN_ENTITLEMENTS = "thomaskamps-pset6/thomaskamps-pset6.entitlements";
 				DEVELOPMENT_TEAM = 4W94L64SGM;
 				INFOPLIST_FILE = "thomaskamps-pset6/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thomaskamps.thomaskamps-pset6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +431,7 @@
 				CODE_SIGN_ENTITLEMENTS = "thomaskamps-pset6/thomaskamps-pset6.entitlements";
 				DEVELOPMENT_TEAM = 4W94L64SGM;
 				INFOPLIST_FILE = "thomaskamps-pset6/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thomaskamps.thomaskamps-pset6";
 				PRODUCT_NAME = "$(TARGET_NAME)";

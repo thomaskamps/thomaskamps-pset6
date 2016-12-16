@@ -15,9 +15,8 @@ class PictureViewController: UIViewController {
     @IBOutlet weak var pictureButton: UIButton!
     
     var data: Dictionary<String, Any> = [:]
-    var ref = FIRDatabase.database().reference()
+    var db: FireBaseHelper!
     var userFavorites: Array<Int> = []
-    var userID: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +24,9 @@ class PictureViewController: UIViewController {
         // Do any additional setup after loading the view.
         FIRAuth.auth()!.addStateDidChangeListener { auth, user in
             guard let user = user else { return }
-            self.userID = user.uid
         }
+        self.db = FireBaseHelper.sharedInstance
+        self.pictureButton.setTitle("Add to favorites", for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,52 +36,55 @@ class PictureViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         pictureImage.imageURL = URL(string: data["webformatURL"] as! String)
-        
-        ref.child("users").child(self.userID).observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
+        print(data)
+        var ref = FIRDatabase.database().reference()
+        ref.child("users/"+self.db.userID!+"/favorites").observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSArray
             if value != nil {
-                self.userFavorites = (value?["favorites"] as? Array)!
-            }
-            if self.userFavorites.contains(self.data["id"] as! Int) {
-                self.pictureButton.setTitle("Remove from favorites", for: .normal)
-                self.pictureButton.setTitleColor(UIColor.red, for: .normal)
-            } else {
-                self.pictureButton.setTitle("Add to favorites", for: .normal)
-                self.pictureButton.setTitleColor(UIColor.blue, for: .normal)
+                self.userFavorites = value! as! Array<Int>
+                if self.userFavorites.contains(self.data["id"] as! Int) {
+                    self.pictureButton.setTitle("Remove from favorites", for: .normal)
+                    self.pictureButton.setTitleColor(UIColor.red, for: .normal)
+                } else {
+                    self.pictureButton.setTitle("Add to favorites", for: .normal)
+                    self.pictureButton.setTitleColor(UIColor.white, for: .normal)
+                }
             }
         }) { (error) in
-            print("opes")
             print(error.localizedDescription)
+        }
+    }
+    @IBAction func saveButtonAction(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(pictureImage.image!, saveImageHandler(_:didFinishSavingWithError:contextInfo:), nil, nil)
+    }
+    
+    func saveImageHandler(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        
+        if error == nil {
+            let alert = UIAlertController(title: "Succes!", message: "The image was saved to your photos.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Failed...", message: error?.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
     }
 
     @IBAction func pictureButtonAction(_ sender: Any) {
         if self.userFavorites.contains(data["id"] as! Int) {
             pictureButton.setTitle("Add to favorites", for: .normal)
-            pictureButton.setTitleColor(UIColor.blue, for: .normal)
+            pictureButton.setTitleColor(UIColor.white, for: .normal)
             if let index = self.userFavorites.index(of: data["id"] as! Int) {
                 self.userFavorites.remove(at: index)
-                print(userFavorites)
-                self.ref.child("users").child(self.userID).setValue(["favorites": self.userFavorites])
+                db.updateFavorites(userFavorites: self.userFavorites)
             }
         } else {
             pictureButton.setTitle("Remove from favorites", for: .normal)
             pictureButton.setTitleColor(UIColor.red, for: .normal)
             self.userFavorites.append(data["id"] as! Int)
-            print(userFavorites)
-            self.ref.child("users").child(self.userID).setValue(["favorites": self.userFavorites])
+            db.updateFavorites(userFavorites: self.userFavorites)
+            db.addFavorite(data: data)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 }

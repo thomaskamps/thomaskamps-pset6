@@ -14,16 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var mailLoginField: UITextField!
     @IBOutlet weak var passwordLoginField: UITextField!
     
-    let db = FireBaseHelper.sharedInstance
+    var db: FireBaseHelper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
             if user != nil {
+                self.db.userID = FIRAuth.auth()?.currentUser?.uid
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
         }
+        self.db = FireBaseHelper.sharedInstance
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,32 +34,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: Any) {
-        self.db.login(email: mailLoginField.text!, password: passwordLoginField.text!)
-    }
-
-    @IBAction func signUpAction(_ sender: Any) {
-        let alert = UIAlertController(title: "Sign Up", message: "Sign Up", preferredStyle: .alert)
-
-        alert.addTextField { mailField in
-            mailField.placeholder = "E-mail"
+        do {
+            try self.db.login(email: mailLoginField.text!, password: passwordLoginField.text!)
+        } catch {
+            self.alert(title: "Something went wrong", message: "Unfortunately something went wrong. Info: \(error)")
         }
-        
-        alert.addTextField { passwordField in
-            passwordField.isSecureTextEntry = true
-            passwordField.placeholder = "Password"
-        }
-        
-        let cancel = UIAlertAction(title: "Cancel", style: .default)
-        let save = UIAlertAction(title: "Sign Up", style: .default) { action in
-            let mailField = alert.textFields![0]
-            let passwordField = alert.textFields![1]
-            self.db.createAccount(email: mailField.text!, password: passwordField.text!)
-        }
-        
-        alert.addAction(save)
-        alert.addAction(cancel)
-        
-        present(alert, animated: true, completion: nil)
     }
 
 }

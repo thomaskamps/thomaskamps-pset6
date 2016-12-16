@@ -1,19 +1,25 @@
 //
-//  CategoriesViewController.swift
-//  thomaskamps-pset6
+//  SettingsViewController.swift
+//  
 //
-//  Created by Thomas Kamps on 12-12-16.
-//  Copyright © 2016 Thomas Kamps. All rights reserved.
+//  Created by Thomas Kamps on 16-12-16.
+//
 //
 
 import UIKit
+import Firebase
 
-class CategoriesViewController: UIViewController {
+class SettingsViewController: UIViewController {
+    
+    let db = FireBaseHelper.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        FIRAuth.auth()!.addStateDidChangeListener { auth, user in
+            guard let user = user else { return }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,5 +37,15 @@ class CategoriesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func logOutAction(_ sender: Any) {
+        do {
+            try self.db.logOut()
+            self.performSegue(withIdentifier: "logOutSegue", sender: nil)
+            
+        } catch {
+            self.alert(title: "Can't log out", message: "Unfortunately something went wrong. Info: \(error)")
+        }
+    }
+    
 
 }
