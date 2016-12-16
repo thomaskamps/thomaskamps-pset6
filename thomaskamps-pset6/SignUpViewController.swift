@@ -43,8 +43,16 @@ class SignUpViewController: UIViewController {
                 let value = snapshot.value as? NSDictionary
                 let retrievedUserID = (value?[self.userNameField.text!] as? String ?? "")!
                 if retrievedUserID == "" {
-                    if let signUpError = self.db.createAccount(username: self.userNameField.text!, email: self.mailField.text!, password: self.passWordField.text!) {
-                        self.alert(title: "Something went wrong", message: "Unfortunately something went wrong. Info: \(signUpError)")
+                    FIRAuth.auth()!.createUser(withEmail: self.mailField.text!, password: self.passWordField.text!) { user, error in
+                        if error == nil {
+                            FIRAuth.auth()!.signIn(withEmail: self.mailField.text!, password: self.passWordField.text!)
+                            var ref = FIRDatabase.database().reference()
+                            let userID = FIRAuth.auth()?.currentUser?.uid
+                            ref.child("users").child(userID!).setValue(["favorites": []])
+                            ref.child("userNames/"+self.userNameField.text!).setValue(userID)
+                        } else {
+                            self.alert(title: "Something went wrong", message: "Unfortunately something went wrong. Info: \(error)")
+                        }
                     }
                 } else {
                     self.alert(title: "Username error", message: "The username of your choice was unfortunately already taken. Please try again with a different username.")

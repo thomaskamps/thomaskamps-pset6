@@ -34,10 +34,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: Any) {
-        do {
-            try self.db.login(email: mailLoginField.text!, password: passwordLoginField.text!)
-        } catch {
-            self.alert(title: "Something went wrong", message: "Unfortunately something went wrong. Info: \(error)")
+        FIRAuth.auth()!.signIn(withEmail: mailLoginField.text!, password: passwordLoginField.text!) {(user, error) in
+            if error == nil {
+                self.db.userID = FIRAuth.auth()?.currentUser?.uid
+            } else {
+                self.alert(title: "Something went wrong", message: "Unfortunately something went wrong. Info: \(error)")
+            }
         }
     }
 
