@@ -21,12 +21,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Authentication check
-        FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
-            
-            // If user is authenticated, perform segue to main app screen
-            if user != nil {
-                self.db.userID = FIRAuth.auth()?.currentUser?.uid
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        if FIRAuth.auth() != nil {
+            FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
+                
+                // If user is authenticated, perform segue to main app screen
+                if user != nil {
+                    self.db.userID = FIRAuth.auth()?.currentUser?.uid
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                }
             }
         }
         
