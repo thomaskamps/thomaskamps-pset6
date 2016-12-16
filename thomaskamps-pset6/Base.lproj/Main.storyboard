@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -93,7 +93,7 @@
         <!--Search View Controller-->
         <scene sceneID="OSq-fC-Mmn">
             <objects>
-                <viewController id="FqL-aS-con" customClass="SearchViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FqL-aS-con" customClass="SearchViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dBA-Me-2An"/>
                         <viewControllerLayoutGuide type="bottom" id="FN0-zR-jYc"/>
@@ -114,7 +114,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S6I-e3-ymJ" id="lTX-to-kMe">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kCD-xl-cs4" customClass="RemoteImageView" customModule="thomaskamps_pset6" customModuleProvider="target">
@@ -187,7 +187,7 @@
         <!--Picture View Controller-->
         <scene sceneID="a5Y-RP-EhF">
             <objects>
-                <viewController id="s8P-1A-kja" customClass="PictureViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PictureController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s8P-1A-kja" customClass="PictureViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kVG-Dp-bgB"/>
                         <viewControllerLayoutGuide type="bottom" id="VJW-hz-O8t"/>
@@ -266,7 +266,7 @@
         <!--Item-->
         <scene sceneID="2Fv-LA-DwT">
             <objects>
-                <navigationController id="1jk-ew-3vu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Nav2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1jk-ew-3vu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="tJG-IO-4gm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ako-DL-8na">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -283,7 +283,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="b6o-G2-Cjc">
             <objects>
-                <viewController id="hBP-Ri-KVd" customClass="SignUpViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hBP-Ri-KVd" customClass="SignUpViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQm-G0-ec0"/>
                         <viewControllerLayoutGuide type="bottom" id="6be-5r-xNV"/>
@@ -362,7 +362,7 @@
         <!--Item-->
         <scene sceneID="i1V-SB-5NR">
             <objects>
-                <navigationController id="LCB-Jn-4t0" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Nav3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LCB-Jn-4t0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Rg3-OC-O0z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5o8-Gj-ob3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -379,7 +379,7 @@
         <!--Settings-->
         <scene sceneID="vqn-f8-ud0">
             <objects>
-                <viewController id="6qK-rk-qYr" customClass="SettingsViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6qK-rk-qYr" customClass="SettingsViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L2i-ZZ-fFZ"/>
                         <viewControllerLayoutGuide type="bottom" id="AP8-vh-Q3q"/>
@@ -388,30 +388,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-jE-V5r">
-                                <rect key="frame" x="161" y="64" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log out"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-jE-V5r">
+                                <rect key="frame" x="116" y="55" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="logOutAction:" destination="6qK-rk-qYr" eventType="touchUpInside" id="T86-1z-MQg"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvU-B7-RZb">
+                                <rect key="frame" x="116" y="93" width="51" height="31"/>
+                                <connections>
+                                    <action selector="privacyAction:" destination="6qK-rk-qYr" eventType="valueChanged" id="3Xq-mo-ldI"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyt-Vd-InI">
+                                <rect key="frame" x="173" y="98" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JC7-jE-V5r" secondAttribute="trailing" constant="101" id="0oj-vC-Bza"/>
+                            <constraint firstItem="lvU-B7-RZb" firstAttribute="top" secondItem="JC7-jE-V5r" secondAttribute="bottom" constant="8" id="3Xe-am-mLu"/>
+                            <constraint firstItem="iyt-Vd-InI" firstAttribute="leading" secondItem="lvU-B7-RZb" secondAttribute="trailing" constant="8" id="EXg-8E-nmz"/>
+                            <constraint firstItem="JC7-jE-V5r" firstAttribute="leading" secondItem="HQ8-yG-kkm" secondAttribute="leadingMargin" constant="100" id="M0z-55-4WU"/>
+                            <constraint firstItem="JC7-jE-V5r" firstAttribute="top" secondItem="L2i-ZZ-fFZ" secondAttribute="bottom" constant="35" id="Sjt-KO-6Qo"/>
+                            <constraint firstItem="iyt-Vd-InI" firstAttribute="top" secondItem="JC7-jE-V5r" secondAttribute="bottom" constant="13" id="bRC-p6-Jlr"/>
+                            <constraint firstItem="lvU-B7-RZb" firstAttribute="leading" secondItem="HQ8-yG-kkm" secondAttribute="leadingMargin" constant="100" id="dJU-LO-vxJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="v2O-eL-Oei"/>
                     <connections>
+                        <outlet property="privacyButton" destination="lvU-B7-RZb" id="Mfe-Th-sNV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="logOutSegue" id="NHh-wj-YVG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANI-qQ-9n7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="1665"/>
+            <point key="canvasLocation" x="2092" y="1664.617691154423"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="OjZ-A9-g9o">
             <objects>
-                <viewController id="Yfs-4O-i6o" customClass="ContactsViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Yfs-4O-i6o" customClass="ContactsViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sbE-Dr-8Tc"/>
                         <viewControllerLayoutGuide type="bottom" id="2kD-ms-kVO"/>
@@ -464,15 +488,15 @@
                                 <rect key="frame" x="0.0" y="189" width="375" height="429"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" id="b4P-jB-hJc" customClass="ContactsTableViewCell" customModule="thomaskamps_pset6" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactCell" id="b4P-jB-hJc" customClass="ContactsTableViewCell" customModule="thomaskamps_pset6" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b4P-jB-hJc" id="5K5-2Y-hsY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-MT-JoH">
-                                                    <rect key="frame" x="8" y="11" width="351" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="318" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -487,6 +511,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="contactLabel" destination="1iD-MT-JoH" id="gtf-2F-VOm"/>
+                                            <segue destination="RUu-P9-YLh" kind="show" identifier="ShowContact" id="g8j-7Q-M0C"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -514,10 +539,88 @@
             </objects>
             <point key="canvasLocation" x="3136.8000000000002" y="908.9955022488756"/>
         </scene>
+        <!--Contacts Favorites View Controller-->
+        <scene sceneID="d43-sc-B0j">
+            <objects>
+                <viewController storyboardIdentifier="ContactFavoritesController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RUu-P9-YLh" customClass="ContactsFavoritesViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vLR-LO-SWr"/>
+                        <viewControllerLayoutGuide type="bottom" id="uIT-93-Ihv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zV4-yX-hGV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-ek-Vkb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactFavoritesCell" rowHeight="150" id="UyY-EZ-bNl" customClass="ContactsFavoritesTableViewCell" customModule="thomaskamps_pset6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyY-EZ-bNl" id="hg6-De-wIH">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DCD-kl-bwe" customClass="RemoteImageView" customModule="thomaskamps_pset6" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="133" height="133"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="DCD-kl-bwe" secondAttribute="height" multiplier="1:1" id="DG2-ZR-Ecf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-IB-mVo">
+                                                    <rect key="frame" x="149" y="8" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfj-cJ-v85">
+                                                    <rect key="frame" x="149" y="37" width="35.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DCD-kl-bwe" firstAttribute="leading" secondItem="hg6-De-wIH" secondAttribute="leadingMargin" id="2ci-OK-w5s"/>
+                                                <constraint firstItem="eRd-IB-mVo" firstAttribute="top" secondItem="hg6-De-wIH" secondAttribute="topMargin" id="gKP-iH-2bd"/>
+                                                <constraint firstItem="zfj-cJ-v85" firstAttribute="leading" secondItem="DCD-kl-bwe" secondAttribute="trailing" constant="8" id="iUz-KK-dzX"/>
+                                                <constraint firstItem="DCD-kl-bwe" firstAttribute="top" secondItem="hg6-De-wIH" secondAttribute="topMargin" id="mFf-Dt-uWb"/>
+                                                <constraint firstItem="eRd-IB-mVo" firstAttribute="leading" secondItem="DCD-kl-bwe" secondAttribute="trailing" constant="8" id="pZu-Kp-jhQ"/>
+                                                <constraint firstItem="zfj-cJ-v85" firstAttribute="top" secondItem="eRd-IB-mVo" secondAttribute="bottom" constant="8" id="sPD-yK-uJY"/>
+                                                <constraint firstItem="DCD-kl-bwe" firstAttribute="bottom" secondItem="hg6-De-wIH" secondAttribute="bottomMargin" id="uhF-Uf-47C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label1" destination="eRd-IB-mVo" id="FzX-bR-jId"/>
+                                            <outlet property="label2" destination="zfj-cJ-v85" id="ucX-5W-QPP"/>
+                                            <outlet property="picture" destination="DCD-kl-bwe" id="duC-e1-SKo"/>
+                                            <segue destination="s8P-1A-kja" kind="show" identifier="ShowPicture" id="0P2-g5-CSq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GdC-ek-Vkb" firstAttribute="leading" secondItem="zV4-yX-hGV" secondAttribute="leading" id="1jd-fp-sFv"/>
+                            <constraint firstItem="GdC-ek-Vkb" firstAttribute="top" secondItem="zV4-yX-hGV" secondAttribute="top" id="28h-M8-DFn"/>
+                            <constraint firstAttribute="trailing" secondItem="GdC-ek-Vkb" secondAttribute="trailing" id="EKv-BO-1Kx"/>
+                            <constraint firstItem="uIT-93-Ihv" firstAttribute="top" secondItem="GdC-ek-Vkb" secondAttribute="bottom" id="bFa-y9-p0u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="GdC-ek-Vkb" id="qQq-EX-fwz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZG7-lP-OTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4055.1999999999998" y="908.9955022488756"/>
+        </scene>
         <!--Item-->
         <scene sceneID="GHD-bv-1ur">
             <objects>
-                <navigationController id="O54-Jj-Y88" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Nav1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O54-Jj-Y88" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="FI4-iC-EpM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Hi-BQ-thM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -534,7 +637,7 @@
         <!--Favorites View Controller-->
         <scene sceneID="qOF-ak-W1T">
             <objects>
-                <viewController id="uX5-mR-PIB" customClass="FavoritesViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserFavoritesController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uX5-mR-PIB" customClass="FavoritesViewController" customModule="thomaskamps_pset6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mD7-qx-56N"/>
                         <viewControllerLayoutGuide type="bottom" id="gkq-JB-Doe"/>
@@ -551,7 +654,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7OH-bR-K1O" id="dMe-Di-bB9">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qln-sG-QJR" customClass="RemoteImageView" customModule="thomaskamps_pset6" customModuleProvider="target">
@@ -620,7 +723,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yF6-BZ-eaM">
             <objects>
-                <tabBarController id="PcQ-VK-vhB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PcQ-VK-vhB" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="FrT-6d-m4B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -639,7 +742,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pAc-xB-Ttm"/>
-        <segue reference="ntX-uy-hPJ"/>
+        <segue reference="1fO-R6-jjm"/>
+        <segue reference="0P2-g5-CSq"/>
     </inferredMetricsTieBreakers>
 </document>

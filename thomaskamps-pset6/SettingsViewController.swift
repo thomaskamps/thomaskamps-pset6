@@ -11,14 +11,25 @@ import Firebase
 
 class SettingsViewController: UIViewController {
     
+    // Initial vars
     let db = FireBaseHelper.sharedInstance
-
+    @IBOutlet weak var privacyButton: UISwitch!
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Authentication control
         FIRAuth.auth()!.addStateDidChangeListener { auth, user in
             guard let user = user else { return }
+        }
+        
+        // Set switch to current value
+        if self.defaults.object(forKey: "privacySetting") != nil {
+            let currentVal = defaults.bool(forKey: "privacySetting")
+            self.privacyButton.setOn(currentVal, animated:true)
+        } else {
+            self.privacyButton.setOn(true, animated:true)
         }
     }
 
@@ -27,19 +38,12 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // Logout function
     @IBAction func logOutAction(_ sender: Any) {
         do {
             try self.db.logOut()
+            
+            // Perform segue to login screen
             self.performSegue(withIdentifier: "logOutSegue", sender: nil)
             
         } catch {
@@ -47,5 +51,35 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    // Set public favorites privacy on/off
+    @IBAction func privacyAction(_ sender: Any) {
+        
+        if self.privacyButton.isOn {
+            
+            // Fetch users favorites from Firebase
+            let ref = FIRDatabase.database().reference().child("users/"+self.db.userID!)
+            
+            ref.observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                let value = snapshot.value as? NSDictionary
+                
+                if value?["favorites"] != nil {
+                    
+                    let userFavorites = value!["favorites"] as! Array<Int>
+                    self.db.updatePublicFavorites(userFavorites: userFavorites)
+                    
+                }
+            }) { (error) in
+                
+                self.alert(title: "An error occurred", message: String(describing: error.localizedDescription))
+            }
+        }
+        if !self.privacyButton.isOn {
+            
+            self.db.updatePublicFavorites(userFavorites: [])
+        }
+
+        self.defaults.set(self.privacyButton.isOn, forKey: "privacySetting")
+    }
 
 }

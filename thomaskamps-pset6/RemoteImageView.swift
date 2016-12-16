@@ -13,13 +13,16 @@ import Siesta
 class RemoteImageView: UIImageView {
     static var imageCache: Service = Service()
     
+    // Set placeholder for network failures / not found pictures
     var placeholderImage = UIImage(named: "placeholder")
     
+    // Property to be set with URL of your image, creates a Siesta resource when set
     var imageURL: URL? {
         get { return imageResource?.url }
         set { imageResource = RemoteImageView.imageCache.resource(absoluteURL: newValue) }
     }
     
+    // Image resource, when set loads the image if possible, otherwise displays placeholder
     var imageResource: Resource? {
         willSet {
             imageResource?.removeObservers(ownedBy: self)

@@ -14,7 +14,6 @@
 		CE1D683D1DFAE863004B40CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */; };
 		CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68441DFB55B1004B40CE /* APIHelper.swift */; };
 		CE1D68471DFEB718004B40CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */; };
-		CE1D68491DFEC187004B40CE /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D68481DFEC187004B40CE /* ImageItem.swift */; };
 		CE1D684B1DFEC4B4004B40CE /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */; };
 		CE1D684D1DFEC61E004B40CE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */; };
 		CE1D684F1DFEC62A004B40CE /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */; };
@@ -27,6 +26,9 @@
 		CE6C00121E03504100E590D4 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C00111E03504100E590D4 /* AlertExtension.swift */; };
 		CE6C00141E03692A00E590D4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C00131E03692A00E590D4 /* SettingsViewController.swift */; };
 		CE7351431DFF3E770071A2BE /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */; };
+		CED552E91E0413CA0068C6B2 /* ContactsFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED552E81E0413CA0068C6B2 /* ContactsFavoritesViewController.swift */; };
+		CED552EB1E0413F80068C6B2 /* ContactsFavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED552EA1E0413F80068C6B2 /* ContactsFavoritesTableViewCell.swift */; };
+		CED552F11E0497970068C6B2 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED552F01E0497970068C6B2 /* HideKeyboardExtension.swift */; };
 		D06AB39C793B72805D5830E5 /* Pods_thomaskamps_pset6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +44,6 @@
 		CE1D683E1DFAE863004B40CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1D68441DFB55B1004B40CE /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		CE1D68461DFEB718004B40CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CE1D68481DFEC187004B40CE /* ImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
 		CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		CE1D684C1DFEC61E004B40CE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		CE6C00111E03504100E590D4 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		CE6C00131E03692A00E590D4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		CED552E81E0413CA0068C6B2 /* ContactsFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsFavoritesViewController.swift; sourceTree = "<group>"; };
+		CED552EA1E0413F80068C6B2 /* ContactsFavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsFavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		CED552F01E0497970068C6B2 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		EECB0673100A11CD7C195C66 /* Pods_thomaskamps_pset6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thomaskamps_pset6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,13 +109,11 @@
 				CE1D68321DFAE863004B40CE /* AppDelegate.swift */,
 				CE1D68441DFB55B1004B40CE /* APIHelper.swift */,
 				CE1D68521DFECFBD004B40CE /* FireBaseHelper.swift */,
-				CE1D68481DFEC187004B40CE /* ImageItem.swift */,
+				CED552ED1E0415620068C6B2 /* TableViewCells */,
 				CE1D68361DFAE863004B40CE /* Main.storyboard */,
-				CE6C000D1E03321000E590D4 /* ContactsTableViewCell.swift */,
-				CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */,
+				CED552F01E0497970068C6B2 /* HideKeyboardExtension.swift */,
 				CE1D68571DFF05D0004B40CE /* RemoteImageView.swift */,
 				CE6C00111E03504100E590D4 /* AlertExtension.swift */,
-				CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */,
 				CE1D68391DFAE863004B40CE /* Assets.xcassets */,
 				CE1D683B1DFAE863004B40CE /* LaunchScreen.storyboard */,
 				CE1D683E1DFAE863004B40CE /* Info.plist */,
@@ -123,6 +125,7 @@
 		CE1D685B1DFF11BD004B40CE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CED552E81E0413CA0068C6B2 /* ContactsFavoritesViewController.swift */,
 				CE6C00131E03692A00E590D4 /* SettingsViewController.swift */,
 				CE6C000F1E0336B800E590D4 /* SignUpViewController.swift */,
 				CE1D684A1DFEC4B4004B40CE /* FavoritesViewController.swift */,
@@ -132,6 +135,17 @@
 				CE1D684E1DFEC62A004B40CE /* ContactsViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CED552ED1E0415620068C6B2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CED552EA1E0413F80068C6B2 /* ContactsFavoritesTableViewCell.swift */,
+				CE6C000D1E03321000E590D4 /* ContactsTableViewCell.swift */,
+				CE7351421DFF3E770071A2BE /* FavoritesTableViewCell.swift */,
+				CE1D68551DFEEE53004B40CE /* SearchTableViewCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 		E0F82E4C4C9715404AA8D11A /* Pods */ = {
@@ -273,12 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED552E91E0413CA0068C6B2 /* ContactsFavoritesViewController.swift in Sources */,
 				CE6C000E1E03321000E590D4 /* ContactsTableViewCell.swift in Sources */,
 				CE1D684D1DFEC61E004B40CE /* SearchViewController.swift in Sources */,
 				CE1D685A1DFF0910004B40CE /* PictureViewController.swift in Sources */,
+				CED552EB1E0413F80068C6B2 /* ContactsFavoritesTableViewCell.swift in Sources */,
 				CE1D684F1DFEC62A004B40CE /* ContactsViewController.swift in Sources */,
 				CE6C00121E03504100E590D4 /* AlertExtension.swift in Sources */,
-				CE1D68491DFEC187004B40CE /* ImageItem.swift in Sources */,
 				CE1D68451DFB55B1004B40CE /* APIHelper.swift in Sources */,
 				CE6C00141E03692A00E590D4 /* SettingsViewController.swift in Sources */,
 				CE1D68531DFECFBD004B40CE /* FireBaseHelper.swift in Sources */,
@@ -286,6 +301,7 @@
 				CE1D68351DFAE863004B40CE /* LoginViewController.swift in Sources */,
 				CE6C00101E0336B800E590D4 /* SignUpViewController.swift in Sources */,
 				CE1D684B1DFEC4B4004B40CE /* FavoritesViewController.swift in Sources */,
+				CED552F11E0497970068C6B2 /* HideKeyboardExtension.swift in Sources */,
 				CE7351431DFF3E770071A2BE /* FavoritesTableViewCell.swift in Sources */,
 				CE1D68331DFAE863004B40CE /* AppDelegate.swift in Sources */,
 				CE1D68561DFEEE53004B40CE /* SearchTableViewCell.swift in Sources */,
