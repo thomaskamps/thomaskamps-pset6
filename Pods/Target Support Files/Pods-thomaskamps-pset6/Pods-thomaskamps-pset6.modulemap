@@ -1,0 +1,6 @@
+framework module Pods_thomaskamps_pset6 {
+  umbrella header "Pods-thomaskamps-pset6-umbrella.h"
+
+  export *
+  module * { export * }
+}
